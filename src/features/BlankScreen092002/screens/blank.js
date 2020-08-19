@@ -93,41 +93,45 @@ export class _Blank extends React.Component {
       >
         Page 1
       </Text>
-      <Button
-        style={{
-          width: "100%",
-          marginLeft: 0,
-          marginRight: 0,
-          marginTop: 5,
-          marginBottom: 5,
-          paddingLeft: 5,
-          paddingRight: 5,
-          paddingTop: 5,
-          paddingBottom: 5,
-          overflow: "visible",
-          textAlign: "center",
-          verticalAlign: "baseline",
-          fontSize: 12,
-          color: "#000000",
-          backgroundColor: "#bdcbf5",
-          fontFamily: "Roboto-Regular",
-          borderColor: "#000000",
-          borderStyle: "solid",
-          borderWidth: 0,
-          borderLeftWidth: 0,
-          borderRightWidth: 0,
-          borderTopWidth: 0,
-          borderBottomWidth: 0,
-          borderRadius: 0,
-          textDecorationLine: "none",
-          textTransform: "none",
-          lineHeight: 12,
-          letterSpacing: 0
-        }}
-        onPress={() => alert("Pressed!")}
+      <TouchableOpacity
+        onPress={() => this.props.navigation.navigate("Blank Screen 1")}
       >
-        Press me!
-      </Button>
+        <Button
+          style={{
+            width: "100%",
+            marginLeft: 0,
+            marginRight: 0,
+            marginTop: 5,
+            marginBottom: 5,
+            paddingLeft: 5,
+            paddingRight: 5,
+            paddingTop: 5,
+            paddingBottom: 5,
+            overflow: "visible",
+            textAlign: "center",
+            verticalAlign: "baseline",
+            fontSize: 12,
+            color: "#000000",
+            backgroundColor: "#bdcbf5",
+            fontFamily: "Roboto-Regular",
+            borderColor: "#000000",
+            borderStyle: "solid",
+            borderWidth: 0,
+            borderLeftWidth: 0,
+            borderRightWidth: 0,
+            borderTopWidth: 0,
+            borderBottomWidth: 0,
+            borderRadius: 0,
+            textDecorationLine: "none",
+            textTransform: "none",
+            lineHeight: 12,
+            letterSpacing: 0
+          }}
+          onPress={() => alert("Pressed!")}
+        >
+          Press me!
+        </Button>
+      </TouchableOpacity>
     </View>
   )
 }
