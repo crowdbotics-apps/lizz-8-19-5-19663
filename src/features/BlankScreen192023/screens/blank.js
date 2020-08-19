@@ -126,7 +126,7 @@ export class _Blank extends React.Component {
         }}
         onPress={() => alert("Pressed!")}
       >
-        Go to Page 1
+        No action associated
       </Button>
     </View>
   )
